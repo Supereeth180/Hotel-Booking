@@ -1,0 +1,130 @@
+<!--Home assignment:
+----Create a webpage about your hometown and describe for what it is known for and add it’s location.
+--- REVISE WHATEVER WE HAVE LEARNT TODAY.
+-->
+
+<!DOCTYPE html>
+<head>
+    <title>Sign Up for Our Wondrous Hotel</title>
+    <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/thumbnails/000/627/396/small/illust58-5847-01.jpg" type="image/x-icon">
+    <style>
+        
+
+
+body {
+    background-repeat: no-repeat;
+
+    font-family: Lucida Sans;
+}
+
+img {
+    background-size: 100%;
+}
+
+       
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        label {
+            font-size: 20px;
+            color: black;
+        }
+
+     
+
+        select {
+            width: 62.5%;
+            padding: 12px;
+            font-family: Lucida Sans;
+        }
+
+        input[type=text], input[type=number], input[type=date], input[type=time]{
+            padding: 12px;
+            font-size: 15px;
+            width: 25%;
+            font-family: Lucida Sans;
+            border-radius: 10px;
+            box-shadow: none;
+        }
+
+        #city {
+            width: 20%;
+        }
+        
+        #state {
+            width: 12%;
+        }
+
+        #zip {
+            width: 12%;
+        }
+
+        .top {
+            width: 100%;
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: -15px;
+        }
+
+        form {
+            background-image: url("https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/62/30/623056_v1.jpeg");
+            opacity: 0.6;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+
+        input[type=submit]{
+            width: 25%;
+            background-color: chocolate;
+            color: white;
+            font-family: Lucida Sans;
+            border: none;
+            padding: 12px;
+            font-size: 18px;
+            transition: 0.2s;
+        }
+
+        input[type=submit]:hover {
+            background-color: darkgreen;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <form method="post" target="_blank" action="success.html">
+    <div class="top"><h1>Book a spot in our prestiguous Hampton Inn!</h1></div>
+    <p><b>Located right next to Chester Springs in Exton, PA.</b></p><br>
+    <label for="firstname"><b>Name:</b></label><br><br>
+    <input type="text" name="firstname" placeholder="First name..." required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="firstname" placeholder="Last name..." required>
+        <br><br><br>
+        <label for="email"><b>E-mail address:</b></label><label style="margin-left: 410px;" for="email"><b>Phone number:</b></label><br><br>
+        <input type="text" name="email" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="phone" required>
+        <br><br>
+        <label for="city"><b>City</b></label><label style="margin-left: 400px;" for="state"><b>State</b></label><label style="margin-left: 240px;" for="zip"><b>ZIP</b></label><br>
+        <input type="text" id="city" name="city" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="state" id="state" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="zip" id="zip" required><br><br>
+        <label for="luxurytype"><b>Select the type of room:</b></label><br><br>
+        
+    <select name="luxurytype" id="luxurytype" required>
+        <option value="Luxury">Luxury</option>
+        <option value="Luxury">Business/Family</option>
+        <option value="Luxury">Economy</option>
+    </select>
+    <br><br><br>
+    <label for="time"><b>Select the date and time:</b></label><br>
+    <input type="date" id="time" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="time" id="time" required>
+    <br><br><br><br><br><br>
+    <input type="submit" value="Book">
+    <br><br><br><br><br><br><br>
+    </form>
+</body>
+
+</html>
